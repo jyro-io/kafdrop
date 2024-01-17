@@ -6,7 +6,7 @@ image:
   pullPolicy: Always
 
 kafka:
-  brokerConnect: localhost:9092
+  brokerConnect: kafka.jyro.svc.cluster.local:9092
   properties: ""
   truststore: ""
   keystore: ""
@@ -36,7 +36,7 @@ server:
 
 service:
   annotations: {}
-  type: NodePort
+  type: LoadBalancer
   port: 9000
   nodePort: 30900
 
