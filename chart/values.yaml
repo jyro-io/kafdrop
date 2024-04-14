@@ -38,7 +38,7 @@ service:
   annotations: {}
   type: LoadBalancer
   port: 9000
-  nodePort: 31375
+  #nodePort: 31375
 
 ingress:
   enabled: false
